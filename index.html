@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agência de viagens</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <img src="assets/imagens/local-logo.png" alt="logo">
+                <h1>Agência de Viagens</h1>
+            </div>
+        </header>
+        <main>
+            <section id="formulario" class="formulario">
+                <div class="center">
+                    <div class="wraper-title">
+                        <h2>Solicite um orçamento</h2>
+                    </div>
+                    <div class="form-container">
+                        <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                            <p>Informe seus dados</p>
+
+                            <div class="campo">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                            </div>
+
+                            <div class="campo">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email para contato">
+                            </div>
+
+                            <div class="campo">
+                                <label for="celular">Celular</label>
+                                <input type="tel" name="telefone" id="celular" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+
+                            <div class="wraper-campo">
+                                <div class="campo">
+                                    <label for="dataIda">Data da ida</label>
+                                    <input type="date" name="dataIda" id="dataIda">
+                                </div>
+
+                                <div class="campo">
+                                    <label for="dataVolta">Data da volta</label>
+                                    <input type="date" name="dataVolta" id="dataVolta">
+                                </div>
+                            </div>
+
+                            <div class="wraper-campo">
+                                <div class="campo">
+                                    <label for="origem">Origem</label>
+                                    <select name="origem" id="origem">
+                                        <option value="">Partindo de</option>
+                                        <option value="bahia">Bahia</option>
+                                        <option value="goias">Goiás</option>
+                                        <option value="manaus">Manaus</option>
+                                        <option value="maranhao">Maranhão</option>
+                                        <option value="niteroi">Niteroi</option>
+                                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                                        <option value="sao_paulo">São Paulo</option>
+                                    </select>
+                                </div>
+                                <div class="campo">
+                                    <label for="destino">Destino</label>
+                                    <select name="destino" id="destino">
+                                        <option value="">Indo para</option>
+                                        <option value="bahia">Bahia</option>
+                                        <option value="goias">Goiás</option>
+                                        <option value="manaus">Manaus</option>
+                                        <option value="maranhao">Maranhão</option>
+                                        <option value="niteroi">Niteroi</option>
+                                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                                        <option value="sao_paulo">São Paulo</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="selecao">
+                                <p>Quarto com cama infantil?</p>
+                                <input type="radio" value="sim" id="sim_cama" name="cama_infantil">
+                                <label for="sim_cama">Sim</label>
+
+                                <input type="radio" value="nao" id="nao_cama" name="cama_infantil">
+                                <label for="nao_cama">Não</label>
+                            </div>
+
+                            <div class="selecao">
+                                <p>Preferências da hospedagem</p>
+                                <div>
+                                    <input type="checkbox" name="hospedagem[]" value="piscina" id="piscina">
+                                    <label for="piscina">Piscina</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="hospedagem[]" value="wi-fi" id="wi-fi">
+                                    <label for="wi-fi">Wi-Fi</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="hospedagem[]" value="garagem" id="garagem">
+                                    <label for="garagem">Garagem</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="hospedagem[]" value="suite" id="suite">
+                                    <label for="suite">Suite</label>
+                                </div>
+                            </div>
+
+                            <button type="submit">Solicitar orçamento</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="ofertas" class="ofertas">
+                <div class="center">
+                    <h2>Ofertas</h2>
+                    <p>Com até 50% de desconto.</p>
+                    <div class="img-container">
+                        <figure class="img-destaque">
+                            <img src="assets/imagens/rio.jpg" alt="rio">
+                            <figcaption>Rio de Janeiro</figcaption>
+                        </figure>
+                        <div class="img-secundarias">
+                            <figure class="img-secunder">
+                                <img src="assets/imagens/manaus.jpg" alt="">
+                                <figcaption>Manaus</figcaption>
+                            </figure>
+                            <figure class="img-secunder">
+                                <img src="assets/imagens/saopaulo.jpg" alt="">
+                                <figcaption>São Paulo</figcaption>
+                            </figure>
+                            <figure class="img-secunder">
+                                <img src="assets/imagens/niteroi.jpg" alt="">
+                                <figcaption>Niteroi</figcaption>
+                            </figure>
+                            <figure class="img-secunder">
+                                <img src="assets/imagens//maranhao.jpg" alt="">
+                                <figcaption>Maranhão</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="anuncios" id="anuncios">
+                <div class="center">
+                    <h2>Explore a Natureza</h2>
+                    <p>Viaje conosco e veja o melhor que a natureza tem a oferecer</p>
+
+                    <div class="anuncio-container">
+                        <div class="anuncio-single">
+                            <div class="anuncio-single-img" style="background-image: url('/assets/imagens/lencol.jpg');"></div>
+                            <div class="anuncio-single-descricao">
+                                <h3>Lençois Maranhenses, Brasil</h3>
+                                <p>Ida e volta a partir de R$79</p>
+                            </div>
+                        </div>
+                        <div class="anuncio-single">
+                            <div class="anuncio-single-img" style="background-image: url('/assets/imagens/goias.jpg');"></div>
+                            <div class="anuncio-single-descricao">
+                                <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                                <p>Ida e volta por R$139</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="center">
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Rio de Janeiro, RJ</li>
+                        <li>Telefone: (62) 99999-9999</li>
+                        <li>Email: contato@agencia.com.br</li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <h3>Nossas redes sociais</h3>
+                    <ul>
+                        <li>/AgenciaDeViagem</li>
+                        <li>@AgenciaDeViagem</li>
+                        <li>@AgenciaDeViagem</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

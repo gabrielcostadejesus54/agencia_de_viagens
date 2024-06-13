@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px){
+    .ofertas .img-container{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img-destaque{
+        width: 100%;
+    }
+
+
+    .img-secundarias{
+        max-width: none;
+        max-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+        
+    .img-secunder{
+        width: 100%;
+        height: auto;
+    }
+
+    .anuncio-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .anuncio-single{
+        width: 100%;
+        margin: 10px;
+    }
+
+    footer .center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .center > div{
+        margin: 10px 0;
+    }
+    
+}
